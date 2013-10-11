@@ -1,3 +1,4 @@
+# Main
 main_collective = mcollective
 collectives = mcollective
 libdir = /usr/libexec/mcollective
@@ -9,9 +10,10 @@ daemonize = 1
 securityprovider = psk
 plugin.psk = unset
 
+# Middleware
 connector = activemq
 plugin.activemq.pool.size = 1
-plugin.activemq.pool.1.host = stomp1
+plugin.activemq.pool.1.host = puppet
 plugin.activemq.pool.1.port = 6163
 plugin.activemq.pool.1.user = mcollective
 plugin.activemq.pool.1.password = marionette
